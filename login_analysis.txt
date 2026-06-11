@@ -1,6 +1,5 @@
-# Reverse-Engineering Study: Login / Authentication Flow in `libCrash.so`
+# Reverse-Engineering: Login / Authentication Flow in `libCrash.so`
 
-> Educational analysis performed with **radare2 6.1.7** (built from official source, git `6.1.6-149-gbe091215d7`).
 > Target: `libCrash.so` from `https://github.com/ZhulXD/Vibes`.
 
 ---
@@ -19,7 +18,6 @@
 | Statically linked | **BoringSSL/OpenSSL** (TLS), zlib, libpng, a JSON parser |
 | Needs | `liblog`, `libandroid`, `libEGL`, `libGLESv3`, `libz`, `libdl` |
 
-**Conclusion:** This is an Android **game mod-menu / cheat** for **Mobile Legends: Bang Bang (MLBB)**.
 Evidence: ImGui-style overlay (EGL/GLESv3), Unity hooks (`Assembly-CSharp.dll`,
 `LogicBattleManager`), rank tiers (`Mythic`, `Honor`, `Glory`), items
 (`Blade of Despair`, `Wind Of Nature`), and a Codashop top-up payload
